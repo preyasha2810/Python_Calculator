@@ -11,11 +11,15 @@ class MyTestCase(unittest.TestCase):
 
     def test_results_property_calc(self):
         calc = Calc()
-        self.assertEqual(calc.result, 5)
+        self.assertEqual(calc.result, 0)
 
     def test_addition_method_calc(self):
         calc = Calc()
         self.assertEqual(calc.add(2,3), 5)
+
+    def test_subtraction_method_calc(self):
+        calc = Calc()
+        self.assertEqual(calc.subtract(7,4), 3)
 
 if __name__ == "__main__":
     unittest.main()
