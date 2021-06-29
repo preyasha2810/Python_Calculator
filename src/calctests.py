@@ -13,7 +13,9 @@ class MyTestCase(unittest.TestCase):
         calc = Calc()
         self.assertEqual(calc.result, 5)
 
-
+    def test_addition_method_calc(self):
+        calc = Calc()
+        self.assertEqual(calc.add(2,3), 5)
 
 if __name__ == "__main__":
     unittest.main()
