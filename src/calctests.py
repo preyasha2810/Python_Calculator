@@ -21,6 +21,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calc.subtract(7,4), 3)
         self.assertEqual(self.calc.result, 3)
 
+    def test_division_method_calc(self):
+        self.assertEqual(self.calc.div(9,3), 3)
+        self.assertEqual(self.calc.result, 3)
+
     def tearDown(self) -> None:
         pass
 

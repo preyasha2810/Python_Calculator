@@ -4,6 +4,9 @@ def addition(a, b):
 def subtraction(a, b):
     return a - b
 
+def division(a, b):
+    return a / b
+
 class Calc:
     result = 0
 
@@ -16,4 +19,8 @@ class Calc:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def div(self, a, b):
+        self.result = division(a, b)
         return self.result
