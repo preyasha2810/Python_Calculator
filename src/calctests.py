@@ -29,6 +29,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calc.mult(3,4), 12)
         self.assertEqual(self.calc.result, 12)
 
+    def test_square_method_calc(self):
+        self.assertEqual(self.calc.square(5), 25)
+        self.assertEqual(self.calc.result, 25)
+
     def tearDown(self) -> None:
         pass
 
