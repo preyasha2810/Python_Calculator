@@ -7,6 +7,9 @@ def subtraction(a, b):
 def division(a, b):
     return a / b
 
+def multiplication(a, b):
+    return a * b
+
 class Calc:
     result = 0
 
@@ -23,4 +26,8 @@ class Calc:
 
     def div(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def mult(self, a, b):
+        self.result = multiplication(a, b)
         return self.result
