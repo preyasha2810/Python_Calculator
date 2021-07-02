@@ -1,3 +1,6 @@
+import math
+
+
 def addition(a, b):
     return a + b
 
@@ -12,6 +15,9 @@ def multiplication(a, b):
 
 def square(a):
     return a**2
+
+def squareroot(a):
+    return math.sqrt(a)
 
 class Calc:
     result = 0
@@ -37,4 +43,8 @@ class Calc:
 
     def square(self, a):
         self.result = square(a)
+        return self.result
+
+    def square_root(self, a):
+        self.result = squareroot(a)
         return self.result

@@ -33,6 +33,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calc.square(5), 25)
         self.assertEqual(self.calc.result, 25)
 
+    def test_squareroot_method_calc(self):
+        self.assertEqual(self.calc.square_root(36), 6)
+        self.assertEqual(self.calc.result, 6)
+
     def tearDown(self) -> None:
         pass
 
