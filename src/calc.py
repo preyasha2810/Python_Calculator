@@ -2,27 +2,36 @@ import math
 
 
 def addition(a, b):
-    return a + b
+    return int(a) + int(b)
+
 
 def subtraction(a, b):
-    return a - b
+    return int(a) - int(b)
+
 
 def division(a, b):
-    return a / b
+    if int(b) != 0:
+        return float(a) / float(b)
+    else:
+        return ZeroDivisionError
+
 
 def multiplication(a, b):
-    return a * b
+    return int(a) * int(b)
+
 
 def square(a):
-    return a**2
+    return float(a) ** 2
+
 
 def squareroot(a):
-    return math.sqrt(a)
+    return math.sqrt(float(a))
+
 
 class Calc:
     result = 0
 
-    def  __init__(self):
+    def __init__(self):
         pass
 
     def add(self, a, b):
@@ -45,6 +54,6 @@ class Calc:
         self.result = square(a)
         return self.result
 
-    def square_root(self, a):
+    def sqr_root(self, a):
         self.result = squareroot(a)
         return self.result
