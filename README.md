@@ -3,8 +3,7 @@
 - Create a calculator using Python that has automated unit tests which required to perform the following operations: [Addition, Subtraction, Multiplication, Division, Square, and SquareRoot](./src/calc.py)  
 - Correct usage of static methods, object methods, object attributes/properties.   
 - Use the included files to load data for your [unit tests](./src/calctests.py) and use each file to test the associated operation.   
-
-You need to make at least 7 unit tests and should develop your tests as you write the program. 
+- You need to make at least 7 unit tests and should develop your tests as you write the program. 
 
 # Requirements
 
