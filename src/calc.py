@@ -1,59 +1,37 @@
-import math
-
-
-def addition(a, b):
-    return int(a) + int(b)
-
-
-def subtraction(a, b):
-    return int(a) - int(b)
-
-
-def division(a, b):
-    if int(b) != 0:
-        return float(a) / float(b)
-    else:
-        return ZeroDivisionError
-
-
-def multiplication(a, b):
-    return int(a) * int(b)
-
-
-def square(a):
-    return float(a) ** 2
-
-
-def squareroot(a):
-    return math.sqrt(float(a))
+from Add import Addition
+from Sub import Subtraction
+from Mult import Multiplication
+from Div import Division
+from Square import Square
+from SquareRoot import SquareRoot
 
 
 class Calc:
     result = 0
 
     def __init__(self):
-        pass
+        self.result = 0
 
     def add(self, a, b):
-        self.result = addition(a, b)
+        self.result = Addition.Add(a, b)
         return self.result
 
     def subtract(self, a, b):
-        self.result = subtraction(a, b)
+        self.result = Subtraction.Sub(a, b)
         return self.result
 
-    def div(self, a, b):
-        self.result = division(a, b)
+    def divide(self, a, b):
+        self.result = Division.Div(a, b)
         return self.result
 
-    def mult(self, a, b):
-        self.result = multiplication(a, b)
+    def multiply(self, a, b):
+        self.result = Multiplication.Mult(a, b)
         return self.result
 
     def square(self, a):
-        self.result = square(a)
+        self.result = Square.Square(a)
         return self.result
 
-    def sqr_root(self, a):
-        self.result = squareroot(a)
+    def squareroot(self, a):
+        self.result = SquareRoot.SquareRoot(a)
         return self.result
