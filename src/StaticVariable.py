@@ -1,0 +1,10 @@
+class StaticVariable:
+    unit_Test_Add = "/src/files/Unit Test Add.csv"
+    unit_Test_Sub = "/src/files/Unit Test Sub.csv"
+    unit_Test_Mult = "/src/files/Unit Test Mult.csv"
+    unit_Test_Div = "/src/files/Unit Test Div.csv"
+    unit_Test_Square = "/src/files/Unit Test Square.csv"
+    unit_Test_SquareRoot = "/src/files/Unit Test Square root.csv"
+    value_1 = "Value 1"
+    value_2 = "Value 2"
+    result = "Result"
