@@ -13,5 +13,7 @@
 - Your program works
 - Your docker file is set up to run the program
 
+# Snapshot
+
 ![Final_Snapshot](https://user-images.githubusercontent.com/45910402/124525470-6952cb80-ddcd-11eb-8431-949ad776079f.JPG)
 
